@@ -1,0 +1,22 @@
+# ArduPilot telemetry port configuration (TELEM1 = SERIAL1)
+# Load in Mission Planner / QGroundControl: Parameters -> Load from file
+# Stream rates chosen so that the total stays well below the radio's
+# usable throughput at AIR_SPEED=64 with ECC on (~25-30 kbps net).
+SERIAL1_PROTOCOL,2
+SERIAL1_BAUD,57
+SERIAL1_OPTIONS,0
+BRD_SER1_RTSCTS,0
+# Stream rates [Hz] for SERIAL1 (SR1_*)
+SR1_RAW_SENS,2
+SR1_EXT_STAT,2
+SR1_RC_CHAN,2
+SR1_RAW_CTRL,0
+SR1_POSITION,5
+SR1_EXTRA1,10
+SR1_EXTRA2,5
+SR1_EXTRA3,2
+SR1_PARAMS,10
+SR1_ADSB,0
+# Failsafe: ground station heartbeat lost for FS_GCS_TIMEOUT seconds -> RTL
+FS_GCS_ENABLE,1
+FS_GCS_TIMEOUT,5

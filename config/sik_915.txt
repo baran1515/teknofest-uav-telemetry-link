@@ -1,0 +1,17 @@
+# SiK radio profile - 915 MHz band (900 MHz class radios)
+# Not: 902-928 MHz bandinin lisanssiz kullanimi ulkeye gore degisir; Turkiye'de
+# bu band icin BTK mevzuati kontrol edilmeli, gerekirse 868 MHz profili kullanilmalidir.
+S1=57        # SERIAL_SPEED   57600 baud
+S2=64        # AIR_SPEED      64 kbps
+S3=26        # NETID
+S4=20        # TXPOWER        dBm
+S5=1         # ECC            on
+S6=1         # MAVLINK        MAVLink framing + RADIO_STATUS
+S7=0         # OPPRESEND
+S8=915000    # MIN_FREQ       kHz
+S9=928000    # MAX_FREQ       kHz
+S10=20       # NUM_CHANNELS
+S11=100      # DUTY_CYCLE
+S12=0        # LBT_RSSI
+S14=0        # RTSCTS
+S15=131      # MAX_WINDOW

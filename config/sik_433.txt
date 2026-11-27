@@ -1,0 +1,19 @@
+# SiK radio profile - 433 MHz band
+# Apply identical values to BOTH radios of a pair (sik_config.py --remote).
+# Register reference: SiK firmware / ArduPilot "SiK Radio - Advanced Configuration".
+# Not: Frekans ve cikis gucu, kullanildigi ulkenin kisa menzilli cihaz (KMC)
+# mevzuatina gore secilmelidir. Asagidaki guc degeri yarisma/test ortami icindir.
+S1=57        # SERIAL_SPEED   57600 baud to the flight controller (SERIALx_BAUD=57)
+S2=64        # AIR_SPEED      64 kbps: stable range/throughput trade-off
+S3=26        # NETID          unique per team, avoids pairing with other teams
+S4=20        # TXPOWER        dBm (20 = 100 mW)
+S5=1         # ECC            Golay error correction on (halves throughput, fewer errors)
+S6=1         # MAVLINK        MAVLink framing + RADIO_STATUS injection
+S7=0         # OPPRESEND      off
+S8=433050    # MIN_FREQ       kHz
+S9=434790    # MAX_FREQ       kHz
+S10=10       # NUM_CHANNELS   frequency hopping channels inside the band
+S11=100      # DUTY_CYCLE     %
+S12=0        # LBT_RSSI       listen-before-talk off
+S14=0        # RTSCTS         no hardware flow control
+S15=131      # MAX_WINDOW     ms (default)
